@@ -1,0 +1,18 @@
+﻿<Window x:Class="Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application"
+        mc:Ignorable="d"
+        Title="FlaUI - Demo" Height="450" Width="800">
+    <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <Button DockPanel.Dock="Top" Name="DoorButton" AutomationProperties.AutomationId="DoorToTheWorld"
+                Click="OnDoorButtonClick" Content="Open Door" />
+
+        <Label DockPanel.Dock="Bottom" Name="UserInfoLabel" Foreground="Green" />
+        
+        <TextBlock DockPanel.Dock="Left"/>
+    </DockPanel>
+</Window>
